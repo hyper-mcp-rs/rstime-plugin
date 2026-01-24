@@ -143,7 +143,7 @@ jobs:
           # - artifact type: identifies "this is a hyper-mcp plugin artifact"
           # - layer: the wasm blob
           oras push "$REF" \
-            --artifact-type application/vnd.hyper-mcp.plugin.v1 \
+            --artifact-type application/vnd.hyper-mcp.plugin.v2 \
             ./plugin.wasm:application/wasm
 
       - name: Resolve ORAS digest
